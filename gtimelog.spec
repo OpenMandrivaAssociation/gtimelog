@@ -8,6 +8,8 @@ URL: http://mg.pov.lt/gtimelog/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source0: http://pypi.python.org/packages/source/g/%name/%name-%version.tar.gz
 Requires: pygtk2.0
+Requires: pygtk2.0-libglade
+BuildRequires: libpython-devel
 BuildRequires: desktop-file-utils
 
 %description
