@@ -10,6 +10,7 @@ Source0: http://pypi.python.org/packages/source/g/%name/%name-%version.tar.gz
 Requires: pygtk2.0
 Requires: pygtk2.0-libglade
 BuildRequires: libpython-devel
+BuildRequires: python-setuptools
 BuildRequires: desktop-file-utils
 
 %description
