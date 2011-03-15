@@ -1,6 +1,6 @@
 Summary: a small application to keep track of your time
 Name: gtimelog
-Version: 0.4.0
+Version: 0.5.0
 Release: %mkrel 1
 Group: Office
 License: GPLv2
