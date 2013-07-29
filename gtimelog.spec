@@ -1,16 +1,18 @@
 Summary: a small application to keep track of your time
 Name: gtimelog
-Version: 0.5.0
-Release: 2
+Version: 0.8.1
+Release: 1
 Group: Office
 License: GPLv2
 URL: http://mg.pov.lt/gtimelog/
-Source0: http://pypi.python.org/packages/source/g/%name/%name-%version.tar.gz
+Source0: http://pypi.python.org/packages/source/g/gtimelog/%{name}-%{version}.tar.gz
 Requires: pygtk2.0
 Requires: pygtk2.0-libglade
 BuildRequires: python-devel
 BuildRequires: python-setuptools
 BuildRequires: desktop-file-utils
+
+%define debug_package %{nil}
 
 %description
 GTimeLog is a small Gtk+ app for keeping track of your time. It's main goal
@@ -22,7 +24,6 @@ is to be as unintrusive as possible.
 %build
 
 %install
-%__rm -rf %buildroot
 %__python setup.py install --root=%buildroot
 mkdir -p %buildroot%_datadir/applications
 desktop-file-install \
@@ -44,4 +45,5 @@ desktop-file-install \
 * Sat Nov 06 2010 Bogdano Arendartchuk <bogdano@mandriva.com> 0.4.0-1mdv2011.0
 + Revision: 594262
 - imported package gtimelog
+
 
