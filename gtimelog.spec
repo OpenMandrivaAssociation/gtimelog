@@ -1,11 +1,11 @@
 Summary: a small application to keep track of your time
 Name: gtimelog
-Version: 0.8.1
+Version: 0.9.1
 Release: 1
 Group: Office
 License: GPLv2
 URL: http://mg.pov.lt/gtimelog/
-Source0: http://pypi.python.org/packages/source/g/gtimelog/%{name}-%{version}.tar.gz
+Source0: https://github.com/gtimelog/gtimelog/archive/0.9.1/%{name}-%{version}.tar.gz
 Requires: pygtk2.0
 Requires: pygtk2.0-libglade
 BuildRequires: python-devel
@@ -24,17 +24,17 @@ is to be as unintrusive as possible.
 %build
 
 %install
-%__python setup.py install --root=%buildroot
-mkdir -p %buildroot%_datadir/applications
+%__python setup.py install --root=%{buildroot}
+mkdir -p %{buildroot}%{_datadir}/applications
 desktop-file-install \
-        --dir %buildroot%_datadir/applications \
+        --dir %{buildroot}%{_datadir}/applications \
         %name.desktop
 
 %files
 %doc README.txt NEWS.txt gtimelogrc.example
-%attr(0755,root,root)%_bindir/%name
-%py_sitedir/%{name}*
-%_datadir/applications/%name.desktop
+%attr(0755,root,root)%{_bindir}/%name
+%{py_puresitedir}/%{name}*
+%{_datadir}/applications/%name.desktop
 
 
 %changelog
@@ -45,5 +45,6 @@ desktop-file-install \
 * Sat Nov 06 2010 Bogdano Arendartchuk <bogdano@mandriva.com> 0.4.0-1mdv2011.0
 + Revision: 594262
 - imported package gtimelog
+
 
 
