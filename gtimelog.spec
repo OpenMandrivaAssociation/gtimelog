@@ -31,7 +31,7 @@ desktop-file-install \
         %name.desktop
 
 %files
-%doc README.txt NEWS.txt gtimelogrc.example
+%doc   gtimelogrc.example
 %attr(0755,root,root)%{_bindir}/%name
 %{py_puresitedir}/%{name}*
 %{_datadir}/applications/%name.desktop
