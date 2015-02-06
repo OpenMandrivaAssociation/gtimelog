@@ -1,7 +1,7 @@
 Summary: a small application to keep track of your time
 Name: gtimelog
 Version: 0.9.1
-Release: 1
+Release: 2
 Group: Office
 License: GPLv2
 URL: http://mg.pov.lt/gtimelog/
