@@ -4,7 +4,7 @@ Version: 0.9.1
 Release: 2
 Group: Office
 License: GPLv2
-URL: http://mg.pov.lt/gtimelog/
+URL: https://mg.pov.lt/gtimelog/
 Source0: https://github.com/gtimelog/gtimelog/archive/0.9.1/%{name}-%{version}.tar.gz
 Requires: pygtk2.0
 Requires: pygtk2.0-libglade
