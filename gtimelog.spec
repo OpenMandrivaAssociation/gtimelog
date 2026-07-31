@@ -1,11 +1,11 @@
 Summary: a small application to keep track of your time
 Name: gtimelog
-Version: 0.9.1
-Release: 3
+Version: 0.12.0
+Release: 1
 Group: Office
 License: GPLv2
 URL: https://mg.pov.lt/gtimelog/
-Source0: https://github.com/gtimelog/gtimelog/archive/0.9.1/%{name}-%{version}.tar.gz
+Source0: https://github.com/gtimelog/gtimelog/archive/0.12.0/%{name}-%{version}.tar.gz
 Requires: pygtk2.0
 Requires: pygtk2.0-libglade
 BuildRequires: python-devel
