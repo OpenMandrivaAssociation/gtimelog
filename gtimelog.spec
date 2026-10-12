@@ -6,10 +6,9 @@ Group: Office
 License: GPLv2
 URL: https://mg.pov.lt/gtimelog/
 Source0: https://github.com/gtimelog/gtimelog/archive/0.12.0/%{name}-%{version}.tar.gz
-Requires: pygtk2.0
-Requires: pygtk2.0-libglade
-BuildRequires: python-devel
-BuildRequires: python-setuptools
+Requires: python%{pyver}dist(pygobject)
+BuildRequires: pkgconfig(python)
+BuildRequires: python%{pyver}dist(setuptools)
 BuildRequires: desktop-file-utils
 
 %define debug_package %{nil}
@@ -31,7 +30,7 @@ desktop-file-install \
         %name.desktop
 
 %files
-%doc   gtimelogrc.example
+%doc README.rst
 %attr(0755,root,root)%{_bindir}/%name
 %{py_puresitedir}/%{name}*
 %{_datadir}/applications/%name.desktop
